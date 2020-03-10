@@ -1,0 +1,390 @@
+:root {
+    --primary-bg: rgba(17, 155, 183, 0.3);
+    --nav-red: #c70039;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 50px;
+    
+}
+
+/** UTILITIES **/
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100% - 70px);
+    background: var(--primary-bg);
+}
+
+.row {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/** NAVIGATSIOON **/
+
+/* Navigatsiooni struktuur */
+#main-nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    background: var(--nav-red);
+    z-index: 1000;
+    
+}
+
+/* Navigatsiooni lingid */
+#nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
+}
+
+#nav-links ul li:hover {
+    background: rgba(0, 0, 0, 0.349);
+}
+
+#nav-links ul li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    background: none;
+}
+
+/* Navigatsiooni otsing */
+#main-nav #search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav #search input {
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+#main-nav #search i {
+    padding-right: 0.1rem;
+    
+}
+
+#search-icon {
+    transform: translate(-30px);
+}
+
+
+
+
+/** HEADER **/
+#main-header {
+    height: 20vh;
+    position: relative;
+}
+
+#main-header #header-logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#main-header #header-logo img {
+    object-fit: cover;
+}
+
+
+
+/** MAIN CONTENT **/
+
+/* About us */
+#main-body-firstpage{
+    display: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#about-us {
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#building {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    width: 500px;
+    min-width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.text-box {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    flex-basis: 50%;
+}
+
+.fixed-content-img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.text-box h2 {
+    font-weight: bold;
+    color: var(--nav-red);
+    padding-bottom: 1rem;
+}
+
+.text-box p {
+    color: #000000;
+}
+
+
+
+
+/* News */
+#news {
+    flex-basis: 20%;
+}
+#uudised {
+    text-align: center;
+    padding: 2rem 0;
+    
+    
+}
+
+#uudised h2 {
+    color: var(--nav-red);
+    margin-bottom: 1rem;
+}
+
+#kursuseinfo {
+    margin-top: 10px;
+    background: #ffffff;
+    margin: 0 1rem;
+}
+
+
+#kursuseinfo h3 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+#kursuseinfo p {
+    padding-bottom: 1rem;
+}
+
+#kursuseinfo a {
+    color: var(--nav-red)
+}
+
+
+
+
+
+/** FOOTER **/
+#page-footer {
+    background: var(--nav-red);
+    color: white;
+    position: relative;
+    height: 70px;
+    padding: 20px;
+}
+#footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 60%;
+    background: var(--nav-red);
+}
+
+#footer-container #sotsiaalmeedia {
+    display: flex;
+}
+
+/* Icons */
+.icon-box {
+    height: 32px;
+    width: 32px;
+    margin: 0 1rem;
+}
+
+.icon-box img {
+    max-width: 100%;
+}
+/* LOGIN  page*/
+
+/* center contact content */
+#main-body-login {
+    height: 100%;
+    width: 100%;
+}
+.container .login-body{
+display:flex;
+height: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+/* contact heading */
+.container .heading{
+    font-size: 75px;
+    font-weight: 700;
+}
+.container .login-body div{
+    margin-top: 24px;
+}
+/* labels */
+.login-body label{
+    font-size: 24px;
+}
+/* inputs */
+.login-body input{
+    padding-left: 24px;
+    font-size: 18px;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+}
+.login-body button{
+    margin-top: 50px;
+    background: var(--nav-red);
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    border:none;
+    height:50px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+/* CONTACT PAGE */
+/* contact body */
+#main-body-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#contact-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 20%;
+}
+
+#contact-heading p {
+    height: max-content;
+}
+
+.contact-body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+/* labels */
+.contact-body label{
+    font-size: 24px;
+}
+/* inputs */
+.contact-body input{
+    padding-left: 24px;
+    font-size: 18px;
+    height: 50px;
+    width: 250px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+}
+/* textarea */
+.contact-body textarea{
+    padding-left: 24px;
+    font-size: 18px;
+    height: 100px;
+    width: 500px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+}
+/* contact button */
+.contact-body button{
+    margin-top: 50px;
+    background: var(--nav-red);
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    border:none;
+    height:50px;
+    width: 150px;
+    border-radius: 25px;
+}
+
+/* koolitusd page */
+.koolitused-body img{
+    width:500px;
+    height:350px;
+}
+.koolitused-body p{
+    font-size: 24px;
+    width:500px;
+}
+
+#main-body-koolitused{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main-body-koolitused p{
+    margin-bottom: 2rem;
+}
+
+.koolitused-body img{
+    width:500px;
+    height:350px;
+}
+.koolitused-body p{
+    font-size: 24px;
+    width:500px;
+}
